@@ -1,0 +1,210 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+%------------------------------------
+
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[spanish]{babel}
+
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+% Document layout.
+\usepackage{geometry} 
+	\geometry{a4paper,
+	          textwidth=5.5in,
+	          textheight=8.5in,
+	          marginparsep=7pt,
+	          marginparwidth=.6in}
+	\setlength\parindent{0in}
+
+% Fonts.
+\usepackage{fontspec}
+% Converts LaTeX specials (``quotes'' --- dashes etc.) to Unicode. 
+\defaultfontfeatures{Mapping=tex-text}
+	\setromanfont[Ligatures=Common,Numbers=OldStyle]{Adobe Caslon Pro}
+	\setmonofont[Scale=0.8]{Monaco} 
+	\setsansfont[Scale=0.9]{OptimaLTStd}
+
+% Custom ampersand.
+\newcommand{\amper}
+           {{\fontspec[Scale=.95]
+                      {Adobe Caslon Pro}\selectfont\itshape\&}}
+% Margin years.
+\usepackage{marginnote}
+	\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+	\renewcommand*{\raggedleftmarginnote}{}
+	\setlength{\marginparsep}{9pt}
+	\reversemarginpar
+
+% Headings.
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+	\sectionfont{\rmfamily\mdseries\Large} 
+	\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+	\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF setup.
+\usepackage[dvipsnames]{xcolor}
+\usepackage[xetex,
+            bookmarks,
+            colorlinks,
+            breaklinks,
+            pdftitle={Víctor Manuel Muñoz Berti -- cv},
+            pdfauthor={Víctor Muñoz}]
+           {hyperref}  
+\hypersetup{linkcolor=NavyBlue,
+            citecolor=NavyBlue,
+            filecolor=black,
+            urlcolor=NavyBlue}  
+
+
+\begin{document}
+{\LARGE Víctor Manuel Muñoz Berti}\\[1cm]
+C/Doñana 5, 3-C\\
+El Astillero \texttt{39610} Cantabria, España\\[.2cm]
+Teléfono: \texttt{690-660-374}\\[.2cm]
+Correo electrónico: \href{mailto:victorm@marshland.es}
+                         {victorm@marshland.es}\\ 
+\vfill
+Fecha de nacimiento: 11 de febrero de 1987---Santander, España\\
+Nacionalidad: Española
+
+
+\section*{Posición actual} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\emph{Ingeniero de diseño software/hardware}, TEDESYS Global, S.L.\\
+Diseño e implementación de un sistema de visión estéreo.
+
+
+\section*{Áreas de interés} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Óptica, nanofotónica, diseño y verificación de circuitos microelectrónicos, diseño de sistemas embebidos, programación de computadores, simulación computacional de sistemas físicos, geometría diferencial.
+
+
+\section*{Educación formal} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2003-2005}\textsc{Bachiller}, modalidad de Ciencias de la naturaleza y de la salud, IES Muriedas.\\
+\textsc{Calificación}: Matrícula de honor.\\
+\years{2005-2010}\textsc{Ingeniería de telecomunicaciones}, Universidad de Cantabria.\\
+\textsc{Proyecto fin de carrera}: \textit{Sensor desechable y de bajo coste en fibra óptica de plástico basado en resonancia de plasmón superficial en interfaces metal--dieléctrico}. \textsc{Calificación}: Matrícula de honor (10).\\
+\years{2007-2010}\textsc{Licenciatura en matemáticas}, Universidad de Cantabria (\textit{no finalizada}).
+
+
+\section*{Puestos ocupados} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2008,2009}Becario de iniciación a la investigación, Grupo de magnetoplasmónica, Instituto de Microelectrónica de Madrid (IMM -- CSIC), Madrid, España.\\
+\years{2008-2010}Estudiante investigador, Grupo de ingeniería fotónica, Universidad de Cantabria, España.
+
+
+\section*{Becas y premios} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2001}Mención especial en la V Olimpiada regional de matemáticas para estudiantes de 4º de la E.S.O.\\
+\years{2005}Vencedor del certamen literario del IES Muriedas, en la modalidad de prosa.\\
+\years{2006-2010}Becario del Ministerio de Educación y Ciencia (MEC).
+
+
+\section*{Líneas de investigación} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2005-2008}Colaboración con el Grupo de ingeniería microelectrónica de la Universidad de Cantabria, consistente en el estudio de la implementación de Linux en un sistema embebido, basado en un microprocesador ARM. El primer paso consistió en la compilación y depuración de programas de prueba (principalmente codificados en C, con pequeñas secciones en ensamblador), probando tanto la arquitectura ARM en sí misma como los periféricos disponibles en la placa de desarrollo, sirviendo además de toma de contacto con el \emph{toolchain} de compilación cruzada. Basándonos en los conocimientos adquiridos estudiamos Linux como sistema operativo embebido para una plataforma basada en ARM, a través de la ejecución de un kernel $\mu$Clinux sobre un simulador del conjunto de instrucciones de ARM.\\
+\years{2008-2009}Simulación de estructuras magnetoplasmónicas usando el formalismo de matriz de \emph{scattering}. Trabajo en una implementación basada en matriz de \emph{scattering} capaz de manejar tanto capas nanoestructuradas como efectos magneto--ópticos, con aplicación al aumento de la respuesta de materiales magneto-ópticos a través de la excitación de plasmones superficiales. Estudiamos una modificación del código, apropiada para el estudio de estructuras periódicas cuasi--1D (\emph{gratings}), aplicada al estudio del fenómeno conocido como supertransmisión, y, especialmente, el uso de materiales magneto-ópticos para modular tal efecto.\\
+\years{2009-presente}Estudio de la excitación de plasmones superficiales polaritones empleando una variación del método de Kretschmann, basada en la propagación de luz en el seno de una fibra óptica de plástico. Desarrollamos un modelo para la propagación de luz en una fibra óptica plástica curvada, teniendo en cuenta tanto el efecto de una curvatura elevada ---comparada con el diámetro de la fibra--- como el pulido llevado a cabo para hacer posible la evaporación de una capa de oro en una superficie plana. Resultados experimentales confirmaron la existencia de un plasmón superficial en la intercara guiaonda--aire, abriendo la posibilidad de desarrollar dispositivos plasmónicos basados en esta configuración.\\
+\years{2010-presente}Modelado y diseño de amplificadores y láseres en fibra basados en el efecto Raman. El modelo desarrollado es capaz de predecir con precisión el comportamiento de varias configuraciones de amplificadores y láseres, incluyendo, entre otras, configuraciones poco comunes, como los láseres en anillo, o dispositivos basados en fibras calcogenadas. Actualmente estamos modelando el efecto de la polarización en el rendimiento de amplificadores y láseres basados en efecto Raman; también estamos estudiando la posibilidad de aplicar el modelo a la caracterización de su estabilidad. El objetivo es desarrollar una herramienta de ayuda al diseño de dispositivos Raman en fibra, con la posibilidad de extender el formalismo al estudio de otros tipos de fenómenos no lineales, como el \emph{scattering} estimulado de Brillouin, y otras tecnologías de amplificación, como los amplificadores basados en fibra dopada con Erbio.\\
+
+
+\section*{Publicaciones y conferencias} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Artículos en conferencias}
+\noindent
+\years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost plastic optical fiber sensor based on surface plasmon resonance}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 septiembre 2010).\\
+\years{2010}A. Quintela, J. M. Lázaro, M. A. Quintela, J. Mirapeix, V. Muñoz--Berti, J. M. López--Hi\-gue\-ra, \textit{Angle transducer based on fiber Bragg gratings able for tunnel auscultation}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 septiembre 2010).
+
+\subsection*{Posters en conferencias}
+\noindent
+\years{2010}Ana C. López--Pérez, Víctor M. Muñoz--Berti, Mauro Lomer, José Miguel López--Higuera, Benito Alén, Antonio García--Martín, José Luis Costa--Krämer, \textit{Surface plasmon resonance in plastic optical fiber sensors: gold film orientation and thickness dependencies}, II Conferencia Española de Nanofotónica (Segovia, Spain, 15-18 junio 2010).\\
+\years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost plastic optical fiber sensor based on surface plasmon resonance}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 septiembre 2010).\\
+\years{2010}A. Quintela, J. M. Lázaro, M. A. Quintela, J. Mirapeix, V. Muñoz--Berti, J. M. López--Hi\-gue\-ra, \textit{Angle transducer based on fiber Bragg gratings able for tunnel auscultation}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 septiembre 2010).\\
+\years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost, single-use plastic optical fiber sensor based on surface plasmon resonance in metal-dielectric interfaces: theory and experiments}, RIAO--OPTILAS 2010 (Lima, Perú, 20-24 septiembre 2010).
+
+
+\section*{Conocimiento de idiomas} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\textsc{Castellano}, lengua materna.
+
+\textsc{Inglés}, nivel alto oral y escrito.\\
+First Certificate in English (FCE), University of Cambridge -- Council of Europe Level B2.\\
+Certificate in Advanced English (CAE), University of Cambridge -- Council of Europe Level C1.\\
+Actualmente preparando el Certificate of Proficiency in English (CPE).
+
+\textsc{Francés}, nivel elemental.
+
+
+\section*{Formación específica} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Especialización en microelectrónica}
+\noindent
+\years{2008-2010}Diseño y verificación de circuitos integrados digitales, principalmente usando plataformas basadas en FPGA.\\
+Diseño de circuitos integrados analógicos \emph{full--custom}.\\
+Diseño de sistemas embebidos, especialmente del tipo \emph{system on chip} (SoC); junto al diseño y depuración de programas en C, creamos aceleradores hardware para tareas específicas en VHDL, analizando el incremento de rendimiento introducido.
+
+\subsection*{Cursos específicos}
+\noindent
+\years{2010}Webinars de AMD: ``OpenCL Programming Webinar Series'' ---creación de programas con paralelismo de datos en GPUs usando OpenCL.
+
+
+\section*{Otras habilidades} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Lenguajes de programación}
+\noindent
+	Amplia experiencia en C/C++, Python, PHP, Ada y BASIC.\\
+	Conocimientos avanzados de VisualLISP y ensamblador MIPS.\\
+	Conocimientos básicos de Perl, Ruby, Java, FORTRAN y Objective--C.
+\subsection*{Administración de sistemas operativos}
+\noindent
+	Windows, Linux (SuSE, Debian, Ubuntu, Fedora), *BSD (OpenBSD, FreeBSD, NetBSD), Solaris, Plan9, QNX RTP.
+\subsection*{Software científico}
+\noindent
+	\textsc{Paquetes comerciales}: MATLAB (incluyendo alternativas libres, como Scilab y Octave), Mathematica, Lumerical (simulación electromagnética basada en el método FDTD).\\
+	\textsc{Bibliotecas de programación}: BLAS, LAPACK, GSL, MPFR, SciPy; varias bibliotecas de propósito específico, principalmente para resolver sistemas de ecuaciones diferenciales ordinarias (COLSYS/COLNEW, COLDAE, ACDC).\\
+	\textsc{Visualización de datos}: Grace, OpenDX, Origin.
+\subsection*{Diseño y verificación de circuitos microelectrónicos}
+\noindent
+	\textsc{Diseño}: Spice (analógicos), VHDL (digitales).\\
+	\textsc{Verificación}: PSL.
+\subsection*{ECAD}
+\noindent
+	\textsc{Diseño de circuitos analógicos y digitales básicos}: OrCAD.\\
+	\textsc{Diseño y verificación de sistemas electrónicos digitales}: Xilinx ISE, Altera Quartus, Mentor Graphics ModelSim.\\
+	\textsc{Diseño \emph{front to back}}: Cadence.\\
+	\textsc{Diseño de circuitos de RF y microondas}: Agilent GENESYS, Agilent ADS, Microwave Office, MMICAD.
+\subsection*{Desarrollo web}
+\noindent
+	Experiencia desarrollando e implementando aplicaciones y servicios web.\\
+	\textsc{Interfaces de usuario}: Amplia experiencia en el uso de estándares W3C: HTML4, XHTML, HTML5, CSS.\\
+	\textsc{Creación de sitios web dinámicos}: Desarrollo de sitios web dinámicos tanto desde el punto de vista del cliente (JavaScript) como del servidor, usando principalmente software libre: Django y otros frameworks, generalmente basados en Python; MySQL y PostgreSQL como bases de datos relacionales; Apache y Nginx como servidores web.\\
+	Experiencia con bases de datos NoSQL, principalmente desarrollando aplicaciones web basadas en la base de datos orientada a documentos MongoDB.
+\subsection*{Sistemas de composición de documentos}
+\noindent
+	Amplia experiencia en el uso de los sistemas de composición de documentos \LaTeX\ y \XeTeX.
+
+
+\vfill{}
+\hrulefill
+
+
+\begin{center}
+{\scriptsize
+	Última actualización: \today \\
+	\href{http://marshland.es/cv_es.pdf}
+	     {http://marshland.es/cv\_es.pdf}
+}
+\end{center}
+
+
+\end{document}
