@@ -17,6 +17,8 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
+\usepackage[english]{babel}
+
 % Document layout.
 \usepackage{geometry} 
 	\geometry{a4paper,
@@ -55,6 +57,7 @@
 % PDF setup.
 \usepackage[dvipsnames]{xcolor}
 \usepackage[xetex,
+            unicode,
             bookmarks,
             colorlinks,
             breaklinks,
@@ -85,7 +88,7 @@ Design and implementation of a stereo vision system.
 
 
 \section*{Areas of specialization} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Optics, nanophotonics, microelectronic circuits design and verification, embedded systems design, computer programming, web development, computational simulation of physical systems, differential geometry.
+Optics, nanophotonics, microelectronic circuits design and verification, embedded systems design, computer programming, computational simulation of physical systems, differential geometry.
 
 
 \section*{Education} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,7 +119,7 @@ Optics, nanophotonics, microelectronic circuits design and verification, embedde
 \years{2008--2009}Simulation of magnetoplasmonic structures, based on the scattering matrix formalism. We worked with a scattering matrix code capable of handling both patterned nanostructures and magneto--optical effects, applied to the enhancement of the response of magneto--optical materials using surface plasmon resonances. A modification of the code, suitable for the study of quasi--1D patterned structures (gratings), was applied to the study of the phenomenon known as extraordinary optical transmission (EOT), and, particularly, the usage of magneto--optical materials to modulate such effect.\\
 \years{2009--present}Investigation of surface plasmon polariton excitation using a variation over Kretschmann's method, based on light propagation in a plastic optical fiber. We developed a model for light propagation in a curved plastic optical fiber, which took into account both the effect of a high--curvature ---in relation to the fiber diameter--- and the polishing of the core carried out to evaporate a gold layer in a planar surface. Experiments confirmed the existence of a surface plasmon in the waveguide--air interface, thus providing a basis for the development of plasmonic devices based on our configuration.\\
 \years{2010--present}Modeling and design of fiber Raman amplifiers and lasers. The developed model was capable of accurately predicting the behavior of various laser and amplifier configurations, including, but not limited to, relatively uncommon configurations, such as ring lasers, or calcoghenide fiber devices. Our current work is related to the effect of polarization in the performance of Raman fiber amplifiers and lasers; also the possibility of applying the model to the study of their stability is under consideration. The goal is to develop a tool capable of assisting in the design of a fiber Raman device, with the possibility of extending the formalism to the study of other kind of nonlinear phenomena, such as stimulated Brillouin scattering, and other amplifier technologies, such as Erbium--doped fiber amplifiers.\\
-\years{2011--present} Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm was correct, but not really efficient when implemented in a FPGA, so we had to perform some modifications (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit. As a result, we developed two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with the modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process.\\
+\years{2011--present}Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm wasn't efficient when implemented in hardware, so we had to modify it (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit. As a result, we are currently developing two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with our modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process.\\
 
 
 \section*{Publications \amper{} talks} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -135,7 +138,9 @@ Optics, nanophotonics, microelectronic circuits design and verification, embedde
 
 
 \section*{Freelance work} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\years{2010--present} Design and development of a web--scale media sharing web service. The objective was to build a highly scalable media sharing site, and my role was to conceive the architecture of the system, selecting the appropriate software for each task, taking into account that our main problem was the need to scale properly; thus, we chose a \textit{shared--nothing} architecture for content generation, and a new--generation NoSQL database for data storage. Once finished with the architecture, I wrote the first version of the service, and started to work towards the first public version, while coordinating the efforts being done in other areas (most notably, the search engine setup and the analytics engine) as the chief architect of the project.
+\noindent
+\years{2010--present}Design and development of a web--scale media sharing web service. The objective was to build a highly scalable media sharing site, and my role was to conceive the architecture of the system, selecting the appropriate software for each task, taking into account that our main problem was the need to scale properly; thus, we chose a \textit{shared--nothing} architecture for content generation, and a new--generation NoSQL database for data storage. Once finished with the architecture, I wrote the first version of the service, and started to work towards the first public beta, while coordinating the efforts being done in other areas (most notably, the search engine setup and the analytics engine) as the chief architect of the project.\\
+\years{2011}Design and development of a web application that unifies the existing official websites about public transport in Cantabria. We built a database from the available information, and built a website around it, capable of planning an optimized route taking into account the criteria supplied by the user, thus improving the existing services and offering a better user experience. The architecture of the system was based completely on free software, including the Django web framework and the MongoDB document--oriented database.
 
 
 \section*{Languages} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -160,18 +165,23 @@ Embedded systems design, especially systems on chip (SoC); along with the design
 
 \subsection*{Specific courses}
 \noindent
-\years{2010}AMD webinars: ``OpenCL Programming Webinar Series'' ---data parallel computing on GPUs using OpenCL.
+\years{2010}AMD webinar series: ``OpenCL Programming Webinar Series'' ---data parallel computing on GPUs using OpenCL.\\
+\years{2011}Assistance to various webinars about \textit{big data} management and NoSQL databases, including:
+\begin{itemize}
+	\item  \emph{CAP Theorem, PACELC and Determinisn}, organized by VoltDB.
+	\item  \emph{Big Data Online Summit}, organized by VoltDB.
+\end{itemize}
 
 
 \section*{Other skills} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Programming languages}
 \noindent
 	Proficiency in C/C++, Python, PHP, Ada and BASIC.\\
-	Advanced knowledge of VisualLISP and MIPS assembler.\\
+	Advanced knowledge of VisualLISP, MIPS assembler and UNIX shell--scripting.\\
 	Elementary knowledge of Perl, Ruby, Java, FORTRAN and Objective--C.
 \subsection*{Operating system administration}
 \noindent
-	Windows, Linux (SuSE, Debian, Ubuntu, Fedora), *BSD (OpenBSD, FreeBSD, NetBSD), Solaris, Plan9, QNX RTP.\\
+	Windows, Linux (SuSE, Debian, Ubuntu, Fedora), *BSD (OpenBSD, FreeBSD), Solaris, Plan9, QNX RTP.\\
 	Extensive experience in UNIX--like operating systems administration. Services deployed include web servers, database manegement systems (both relational and NoSQL), monitoring services, mail servers, caches and proxies, and firewalls.
 \subsection*{Scientific software}
 \noindent
@@ -193,10 +203,16 @@ Embedded systems design, especially systems on chip (SoC); along with the design
 	Experience developing and deploying web applications and services.\\
 	\textsc{User interfaces}: Extensive usage of W3C standards: HTML4, XHTML, HTML5, CSS.\\
 	\textsc{Dynamic website building}: Development of dynamic websites both on the user side (JavaScript \amper{} JQuery) and on the server side, using mainly open source software: Django and other, mainly Python--based, web frameworks; MySQL and PostgreSQL as relational database engines; Apache and Nginx as web servers.\\
-	Some experience with NoSQL databases, mainly developing webapps based on the MongoDB document--oriented database. Development of proofs of concept to show how to combine MongoDB and the Django framework.
+	Some experience with NoSQL databases, mainly developing webapps based on the MongoDB document--oriented database. Development of proofs of concept to show how to combine MongoDB and the Django web framework.
 \subsection*{Document composition systems}
 \noindent
 	Extensive usage of both \LaTeX\ and \XeTeX\ document composition systems.
+
+
+\section*{Miscellaneous} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+Member of the Cantabria Linux Users Group, Linuca, since its legal establishment in 2003; vice--president since 2006.\\
+Member of my University Linux Users Group ---now extinct; speaker in the free software introduction talk given in December, 2005; vice--president from 2006 to 2008.
 
 
 \vfill{}
