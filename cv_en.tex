@@ -82,13 +82,13 @@ Born: February {\addfontfeature{VerticalPosition=Ordinal} 11th} 1987---Santander
 Nationality: Spanish
 
 
-\section*{Current position} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\emph{HW/SW engineer}, TEDESYS Global, S.L.\\
-Design and implementation of a stereo vision system.
+%\section*{Current position} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\emph{HW/SW engineer}, TEDESYS Global, S.L.\\
+%Design and implementation of a stereo vision system.
 
 
 \section*{Areas of specialization} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Optics, nanophotonics, microelectronic circuits design and verification, embedded systems design, computer programming.
+Optics, nanophotonics, microelectronic circuits design and verification, embedded systems design, computer programming, computer architecture.
 
 
 \section*{Education} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,8 +112,12 @@ Optics, nanophotonics, microelectronic circuits design and verification, embedde
 
 \section*{Appointments held} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
-\years{2008,2009}Summer grant at Magnetoplasmonics group, Madrid Microelectronics Institute (IMM -- CSIC), Madrid, Spain.\\
-\years{2008--2010}Researcher student, Photonics Engineering Group, University of Cantabria, Spain.
+\years{2008,2009}Summer grant, \href{http://www.imm.cnm.csic.es/magnetoplasmonics}{Magnetoplasmonics group}, Madrid Microelectronics Institute (IMM -- CSIC), Madrid, Spain.
+\\
+Simulation of magnetoplasmonic nanostructures using the scattering matrix formalism.\\
+\years{2008--2010}Researcher student, Photonics Engineering Group, University of Cantabria, Spain.\\
+\years{2011}HW/SW engineer, \href{http://www.tedesys.com}{TEDESYS Global, S.L.}\\
+Design and implementation of a stereo vision system.
 
 
 \section*{Grants, honors \amper{} awards} %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,15 +127,13 @@ Optics, nanophotonics, microelectronic circuits design and verification, embedde
 \years{2006--2010}Undergraduate studentship, Spanish Ministry of Science and Education.
 
 
-
-\section*{Research} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Research lines} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \years{2005--2008}Collaboration with the Microelectronics Engineering Group of the University of Cantabria, consisting on the study of the implementation of Linux in an embedded system, based on an ARM microprocessor. The project started compiling and debugging test programs (mainly coded in C, with minor bits of assembly), testing both the ARM architecture itself and the peripherals available in our development board, serving also as a way of becoming familiar with the cross compiling toolchain. Based on the knowledge acquired, we studied Linux as an embedded operating system for an ARM--based platform, by means of executing a $\mu$Clinux kernel inside an ARM simulator.\\
 \years{2008--2009}Simulation of magnetoplasmonic structures, based on the scattering matrix formalism. We worked with a scattering matrix code capable of handling both patterned nanostructures and magneto--optical effects, applied to the enhancement of the response of magneto--optical materials using surface plasmon resonances. A modification of the code, suitable for the study of quasi--1D patterned structures (gratings), was applied to the study of the phenomenon known as extraordinary optical transmission (EOT), and, particularly, the usage of magneto--optical materials to modulate such effect.\\
 \years{2009--present}Investigation of surface plasmon polariton excitation using a variation over Kretschmann's method, based on light propagation in a plastic optical fiber. We developed a model for light propagation in a curved plastic optical fiber, which took into account both the effect of a high--curvature ---in relation to the fiber diameter--- and the polishing of the core carried out to evaporate a gold layer in a planar surface. Experiments confirmed the existence of a surface plasmon in the waveguide--air interface, thus providing a basis for the development of plasmonic devices based on our configuration.\\
 \years{2010--present}Modeling and design of fiber Raman amplifiers and lasers. The developed model was capable of accurately predicting the behavior of various laser and amplifier configurations, including, but not limited to, relatively uncommon configurations, such as ring lasers, or calcoghenide fiber devices. Our current work is related to the effect of polarization in the performance of Raman fiber amplifiers and lasers; also the possibility of applying the model to the study of their stability is under consideration. The goal is to develop a tool capable of assisting in the design of a fiber Raman device, with the possibility of extending the formalism to the study of other kind of nonlinear phenomena, such as stimulated Brillouin scattering, and other amplifier technologies, such as Erbium--doped fiber amplifiers.\\
-\years{2011--present}Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm wasn't efficient when implemented in hardware, so we had to modify it (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit. As a result, we are currently developing two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with our modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process.\\
-
+\years{2011}Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm wasn't efficient when implemented in hardware, so we had to modify it (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit. As a result, we developed two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with our modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process, and several proofs of concept, using commercial cameras and the \texttt{dc1394} library to control them.
 
 
 \section*{Publications \amper{} talks} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -192,8 +194,8 @@ Focus on optics and photonics, covering a wide range of topics, such as diffract
 \section*{IT skills} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Programming languages}
 \noindent
-	Proficiency in C/C++, Python, PHP, Ada and BASIC.\\
-	Advanced knowledge of VisualLISP, MIPS assembler and UNIX shell--scripting.\\
+	Proficiency in C/C++, Python, Ada and BASIC.\\
+	Advanced knowledge of PHP, VisualLISP, MIPS assembler and UNIX shell--scripting.\\
 	Elementary knowledge of Perl, Ruby, Java, FORTRAN and Objective--C.
 \subsection*{Operating system administration}
 \noindent
@@ -218,7 +220,8 @@ Focus on optics and photonics, covering a wide range of topics, such as diffract
 \subsection*{Scientific software}
 \noindent
 	\textsc{Commercial packages}: MATLAB (including open source alternatives, such as Scilab and Octave), Mathematica, Lumerical (electromagnetic simulation based on the FDTD method).\\
-	\textsc{Software libraries}: BLAS, LAPACK, GSL, MPFR, SciPy; various purpose--specific libraries, mainly for solving ODE systems (COLSYS/COLNEW, COLDAE, ACDC).\\
+	\textsc{Scientific software libraries}: BLAS, LAPACK, GSL, MPFR, SciPy; various purpose--specific libraries, mainly for solving ODE systems (COLSYS/COLNEW, COLDAE, ACDC).\\
+	\textsc{Computer vision libraries}: OpenCV.\\
 	\textsc{Data visualization}: Grace, OpenDX, Origin.
 \subsection*{Microelectronic circuits design and verification}
 \noindent
