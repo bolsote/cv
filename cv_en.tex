@@ -82,8 +82,8 @@ Born: February {\addfontfeature{VerticalPosition=Ordinal} 11th} 1987---Santander
 Nationality: Spanish
 
 
-\section*{Current position} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\textsc{Lead developer}, \href{http://www.iteisa.com}{ITEISA Desarrollo y Sistemas, S.L.}
+%\section*{Current position} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\textsc{Lead developer}, \href{http://www.iteisa.com}{ITEISA Desarrollo y Sistemas, S.L.}
 
 
 \section*{Areas of specialization} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -115,8 +115,9 @@ Optics, nanophotonics, microelectronic circuits design and verification, embedde
 \\
 Simulation of magnetoplasmonic nanostructures using the scattering matrix formalism.\\
 \years{2008--2010}Researcher student, Photonics Engineering Group, University of Cantabria, Spain.\\
-\years{2011}HW/SW engineer, \href{http://www.tedesys.com}{TEDESYS Global, S.L.}\\
-Design and implementation of a stereo vision system.
+\years{2011}\textsc{HW/SW engineer}, \href{http://www.tedesys.com}{TEDESYS Global, S.L.}\\
+Design and implementation of a stereo vision system.\\
+\years{2011-2012}\textsc{Lead developer}, \href{http://www.iteisa.com}{ITEISA Desarrollo y Sistemas, S.L.}
 
 
 \section*{Grants, honors \amper{} awards} %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -126,18 +127,16 @@ Design and implementation of a stereo vision system.
 \years{2006--2010}Undergraduate studentship, Spanish Ministry of Science and Education.
 
 
-\section*{Projects} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\noindent
-\years{2011\\\textsc{TEDESYS}}Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm wasn't efficient when implemented in hardware, so we had to modify it (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit, thus reducing the total cost of the project. As a result, we developed two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with our modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process, and several proofs of concept, using commercial cameras and the \texttt{dc1394} library to control them.\\
-\years{2011\\\textsc{ITEISA}}Streamlining of the software development process, migrating the main code bases to a version control system and implementing measures to increment developer productivity and code quality, including an issue tracking system, a centralized software configuration system, the creation of homogeneous development environments ---through the use of virtual machines---, and the use of unit testing for mission--critical code. Such improvements resulted in an increased productivity and a greater control over the whole process of deploying a new version of a given software system.\\
-\years{2011--present\\\textsc{ITEISA}}Indexing of the whole body of parlamentary acts of the Spanish Congress, and development of an open source--based search engine on top of the stored data. Using Apache Solr as the core technology, coupled to a key--value store, we were capable of offering results at a line level inside a dataset comprising more than 15000 pages. Once chosen the appropriate software stack, we coded both the frontend website and the backend code to index the original PDF files, automating the whole processing stage; even most of the older files could be indexed properly, due to the use of string metrics to extrapolate missing or damaged data. Current work is focused on implementing additional processing stages, mainly oriented to achieving named--entity recognition (NER) capabilities, e.g. allowing to identify a particular speech with the original speaker.
+\newpage
+\part*{Research work}
 
 
 \section*{Research lines} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \years{2005--2008}Collaboration with the Microelectronics Engineering Group of the University of Cantabria, consisting on the study of the implementation of Linux in an embedded system, based on an ARM microprocessor. The project started compiling and debugging test programs (mainly coded in C, with minor bits of assembly), testing both the ARM architecture itself and the peripherals available in our development board, serving also as a way of becoming familiar with the cross compiling toolchain. Based on the knowledge acquired, we studied Linux as an embedded operating system for an ARM--based platform, by means of executing a $\mu$Clinux kernel inside an ARM simulator.\\
 \years{2008--2009}Simulation of magnetoplasmonic structures, based on the scattering matrix formalism. We worked with a scattering matrix code capable of handling both patterned nanostructures and magneto--optical effects, applied to the enhancement of the response of magneto--optical materials using surface plasmon resonances. A modification of the code, suitable for the study of quasi--1D patterned structures (gratings), was applied to the study of the phenomenon known as extraordinary optical transmission (EOT), and, particularly, the usage of magneto--optical materials to modulate such effect.\\
-\years{2009--present}Investigation of surface plasmon polariton excitation using a variation over Kretschmann's method, based on light propagation in a plastic optical fiber. We developed a model for light propagation in a curved plastic optical fiber, which took into account both the effect of a high--curvature ---in relation to the fiber diameter--- and the polishing of the core carried out to evaporate a gold layer in a planar surface. Experiments confirmed the existence of a surface plasmon in the waveguide--air interface, thus providing a basis for the development of plasmonic devices based on our configuration.\\
+\years{2009--2011}Investigation of surface plasmon polariton excitation using a variation over Kretschmann's method, based on light propagation in a plastic optical fiber. We developed a model for light propagation in a curved plastic optical fiber, which took into account both the effect of a high--curvature ---in relation to the fiber diameter--- and the polishing of the core carried out to evaporate a gold layer in a planar surface. Experiments confirmed the existence of a surface plasmon in the waveguide--air interface, thus providing a basis for the development of plasmonic devices based on our configuration.\\
+\years{2010}Investigation of light localization inside an optical fiber. We investigated the current approaches, and, through computer simulations, we studied the viability of an optical fiber as a support for building random lasers.\\
 \years{2010--present}Modeling and design of fiber Raman amplifiers and lasers. The developed model was capable of accurately predicting the behavior of various laser and amplifier configurations, including, but not limited to, relatively uncommon configurations, such as ring lasers, or calcoghenide fiber devices. Our current work is related to the effect of polarization in the performance of Raman fiber amplifiers and lasers; also the possibility of applying the model to the study of their stability is under consideration. The goal is to develop a tool capable of assisting in the design of a fiber Raman device, with the possibility of extending the formalism to the study of other kind of nonlinear phenomena, such as stimulated Brillouin scattering, and other amplifier technologies, such as Erbium--doped fiber amplifiers.
 
 
@@ -152,13 +151,29 @@ Design and implementation of a stereo vision system.
 \years{2010}Ana C. López--Pérez, Víctor M. Muñoz--Berti, Mauro Lomer, José Miguel López--Higuera, Benito Alén, Antonio García--Martín, José Luis Costa--Krämer, \textit{Surface plasmon resonance in plastic optical fiber sensors: gold film orientation and thickness dependencies}, II Conferencia Española de Nanofotónica (Segovia, Spain, 15-18 June 2010).\\
 \years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost plastic optical fiber sensor based on surface plasmon resonance}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 September 2010).\\
 \years{2010}A. Quintela, J. M. Lázaro, M. A. Quintela, J. Mirapeix, V. Muñoz--Berti, J. M. López--Hi\-gue\-ra, \textit{Angle transducer based on fiber Bragg gratings able for tunnel auscultation}, IV European Workshop on Optical Fibre Sensors (Porto, Portugal, 8-10 September 2010).\\
-\years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost, single-use plastic optical fiber sensor based on surface plasmon resonance in metal-dielectric interfaces: theory and experiments}, RIAO--OPTILAS 2010 (Lima, Perú, 20-24 September 2010).
+\years{2010}V. M. Muñoz--Berti, A. C. López--Pérez, B. Alén, J. L. Costa--Krämer, A. García--Martín, M. Lomer, J. M. López--Higuera, \textit{Low cost, single-use plastic optical fiber sensor based on surface plasmon resonance in metal-dielectric interfaces: theory and experiments}, RIAO OPTILAS 2010 (Lima, Perú, 20-24 September 2010).
+
+
+\newpage
+\part*{Non--research work}
+
+
+\section*{Projects} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2011\\\textsc{TEDESYS}}Development of a FPGA--based stereo vision system. Starting from the stereo calibration and rectification algorithms implemented in the OpenCV library, we adapted them to a FPGA implementation, with the objective of building a basic stereo vision system, capable of producing rectified images appropriate as input for more advanced algorithms, such as disparity map calculation. The original algorithm wasn't efficient when implemented in hardware, so we had to modify it (namely, we inverted the correction map), in order to improve both the area and speed of the resulting circuit, thus reducing the total cost of the project. As a result, we developed two systems: one using the OpenCV algorithm, adequate for low--resolution cameras, and other with our modified algorithm, capable of performing real--time calibration and rectification with high--definition images. Together with the hardware, we developed the necessary software to perform the initial calibration process, and several proofs of concept, using commercial cameras and the \texttt{dc1394} library to control them.\\
+\years{2011\\\textsc{ITEISA}}Streamlining of the software development process, migrating the main code bases to a version control system and implementing measures to increment developer productivity and code quality, including an issue tracking system, a centralized software configuration system, the creation of homogeneous development environments ---through the use of virtual machines---, and the use of unit testing for mission--critical code. Such improvements resulted in an increased productivity and a greater control over the whole process of deploying a new version of a given software system.\\
+\years{2011--2012\\\textsc{ITEISA}}Indexing of the whole body of parlamentary acts of the Spanish Congress, and development of an open source--based search engine on top of the stored data. Using Apache Solr as the core technology, coupled to a key--value store, we were capable of offering results at a line level inside a dataset comprising more than 15000 pages. Once chosen the appropriate software stack, we coded both the frontend website and the backend code to index the original PDF files, automating the whole processing stage; even most of the older files could be indexed properly, due to the use of string metrics to extrapolate missing or damaged data. Current work is focused on implementing additional processing stages, mainly oriented to achieving named--entity recognition (NER) capabilities, e.g. allowing to identify a particular speech with the original speaker.\\
+\years{2012\\\textsc{ITEISA}}Design of a real--time rendering system to be integrated into a shoe customization web application. User input consisted of an associative array, in which each part of the shoe is associated with a material, a colour and, optionally, an image to be imprinted on selected materials; taking that array as a starting point we constructed a texture using image composition methods, which was later applied to a 3D model of the selected shoe, rendered using POV-Ray. In order to improve the scalability of the system we created an intermediate layer, based on ZeroMQ, capable of distributing render jobs to any number of nodes ---nodes being either processes in the same machine or completely independent machines.
 
 
 \section*{Freelance work} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \years{2010--present}Design and development of a web--scale media sharing web service. The objective was to build a highly scalable media sharing site, and my role was to conceive the architecture of the system, selecting the appropriate software for each task, taking into account that our main problem was the need to scale properly; thus, we chose a \textit{shared--nothing} architecture for content generation, and a new--generation NoSQL database for data storage. Once finished with the architecture, I wrote the first version of the service, and started to work towards the first public beta, while coordinating the efforts being done in other areas (most notably, the search engine setup and the analytics engine) as the chief architect of the project.\\
 \years{2011}Design and development of a web application that unifies the existing official websites about public transport in Cantabria. We built a database from the available information, and built a website around it, capable of planning an optimized route taking into account the criteria supplied by the user, thus improving the existing services and offering a better user experience. The architecture of the system was based completely on free software, including the Django web framework and the MongoDB document--oriented database.
+
+
+\newpage
+\part*{Specific information}
 
 
 \section*{Languages} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -170,6 +185,7 @@ First Certificate in English (FCE), University of Cambridge -- Council of Europe
 Certificate in Advanced English (CAE), University of Cambridge -- Council of Europe Level C1.\\
 Now preparing Certificate of Proficiency in English (CPE).\\
 TOEFL score: 105.\\
+Technical assessment in juridic and technical translations.\\
 
 \textsc{French}, basic.
 
@@ -195,19 +211,18 @@ Focus on optics and photonics, covering a wide range of topics, such as diffract
 \section*{IT skills} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Programming languages}
 \noindent
-	Proficiency in C/C++, Python, Ada and BASIC.\\
-	Advanced knowledge of PHP, VisualLISP, MIPS assembler and UNIX shell--scripting.\\
+	Proficiency in C/C++, Python and PHP.\\
+	Advanced knowledge of Ada, BASIC, JavaScript, VisualLISP, MIPS assembler and UNIX shell scripting.\\
 	Elementary knowledge of Perl, Ruby, Java, FORTRAN and Objective--C.
 \subsection*{Operating system administration}
 \noindent
-	Windows, Linux (SuSE, Debian, Ubuntu, Fedora), *BSD (OpenBSD, FreeBSD), Solaris, Plan9, QNX RTP.\\
-	Extensive experience in UNIX--like operating systems administration. Services deployed include web servers, database management systems (both relational and NoSQL), monitoring services, mail servers, caches and proxies, and firewalls.
+	Windows, Linux (SuSE, Debian, Ubuntu, Fedora, Red Hat), *BSD (OpenBSD, FreeBSD), Solaris, Plan9, QNX RTP.\\
+	Extensive experience in UNIX--like operating systems administration. Services deployed include web servers, database management systems, monitoring services, mail servers, caches and proxies, and firewalls.
 \subsection*{Web development}
 \noindent
-	Experience developing and deploying web applications and services.\\
-	\textsc{User interfaces}: Extensive usage of W3C standards: HTML4, XHTML, HTML5, CSS.\\
-	\textsc{Dynamic website building}: Development of dynamic websites both on the user side (JavaScript \amper{} jQuery) and on the server side, using mainly open source software: Django and other, mainly Python and PHP--based, web frameworks; MySQL and PostgreSQL as relational database engines; Apache and Nginx as web servers.\\
-	Some experience with NoSQL databases, mainly developing webapps based on the MongoDB document--oriented database. Development of proofs of concept to show how to combine MongoDB and the Django web framework. Minor experience with key--value stores (Kyoto Cabinet\amper{}Tycoon).\\
+	\textsc{User interfaces}: Extensive usage of W3C standards: HTML4, XHTML, HTML5, CSS. Development of client--side dynamic websites with JavaScript \amper{} jQuery.\\
+	\textsc{MVC frameworks}: Extensive usage of both PHP (CakePHP) and Python--based (Django, Grok) web frameworks.\\
+	\textsc{Database management systems}: Knowledge of relational database design, optimization and administration ---MySQL, PostgreSQL. Minor experience with NoSQL databases ---MongoDB.\\
 	Design and development of web--based search engines using Apache Solr.
 \subsection*{Version control systems}
 \noindent
