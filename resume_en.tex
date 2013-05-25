@@ -1,0 +1,173 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+\documentclass[11pt]{article}
+
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+\usepackage[english]{babel}
+
+% Document layout.
+\usepackage{geometry} 
+	\geometry{letterpaper,
+	          textwidth=6.3in,
+	          textheight=9in,
+	          marginparsep=7pt,
+	          marginparwidth=.6in,
+	          right=1in}
+	\setlength\parindent{0in}
+
+% Fonts.
+\usepackage{fontspec}
+% Converts LaTeX specials (``quotes'', --- dashes, etc.) to Unicode. 
+\defaultfontfeatures{Mapping=tex-text}
+	\setromanfont[Ligatures=Common,Numbers=OldStyle]{Adobe Caslon Pro}
+	\setmonofont[Scale=0.8]{Monaco} 
+	\setsansfont[Scale=0.9]{OptimaLTStd}
+\newfontfamily\dingbats{ITC Zapf Dingbats Std}
+
+% Custom ampersand.
+\newcommand{\amper}
+           {{\fontspec[Scale=.95]
+                      {Adobe Caslon Pro}\selectfont\itshape\&}}
+% Margin years.
+\usepackage{marginnote}
+	\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+	\renewcommand*{\raggedleftmarginnote}{}
+	\setlength{\marginparsep}{7pt}
+	\reversemarginpar
+
+% Headings.
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+	\sectionfont{\rmfamily\mdseries\Large} 
+	\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
+	\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+
+% PDF setup.
+\usepackage[dvipsnames]{xcolor}
+\usepackage[xetex,
+            unicode,
+            bookmarks,
+            colorlinks,
+            breaklinks,
+            pdftitle={Víctor Manuel Muñoz Berti -- cv},
+            pdfauthor={Víctor Muñoz}]
+           {hyperref}  
+\hypersetup{linkcolor=NavyBlue,
+            citecolor=NavyBlue,
+            filecolor=black,
+            urlcolor=NavyBlue}
+
+
+\begin{document}
+
+\begin{minipage}[m]{.3\textwidth}
+	{\LARGE Víctor Muñoz}
+\end{minipage}
+\begin{minipage}[m]{.35\textwidth}
+	One Miramar Street \#929467\\
+	La Jolla, CA 92092-0100
+\end{minipage}
+\begin{minipage}[m]{.3\textwidth}
+	{\dingbats ✆} \texttt{+34 644 377 751}\\
+	{\dingbats ✉} \href{mailto:victorm@marshland.es}
+	                    {victorm@marshland.es}
+\end{minipage}\\[0.2cm]
+
+
+\section*{Areas of specialization} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Software development, computer architecture,  microelectronic circuits design and verification, signal processing methods and algorithms, network analysis and design.
+
+
+\section*{Experience}  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2012--present}Freelance worker.
+\begin{itemize}
+	\item  Design and development of a web--scale media sharing web service.\\
+	\textit{Technologies:} Python, Django, MongoDB.
+\end{itemize}
+
+\years{2011--2013}\textsc{Lead developer}, \href{http://www.iteisa.com}{ITEISA Desarrollo y Sistemas, S.L.}, Santander, Spain.
+\begin{itemize}
+	\item  Streamlining of the company software development process, migrating to a version control system and an automated configuration and deployment system.\\
+	\textit{Technologies:} Git, Puppet.
+	\item  Design and development of a search engine on top of the whole body of parliamentary acts of the Spanish Congress.\\
+	\textit{Technologies:} Apache Solr, Kyoto Cabinet, OpenNLP, OpenCalais, Perl.
+	\item  Design an development of a window configuration system, to be integrated into a window manufacturer website.\\
+	\textit{Technologies:} JavaScript, Processing.js, jQuery, CakePHP, MySQL.
+	\item  Design, development and deployment of a real--time rendering system for a shoe-customization web application.\\
+	\textit{Technologies:} CakePHP, Imagick, MySQL, FastCGI, POV-Ray, Autodesk Maya, ZeroMQ.
+	\item  Design and development of a scraper to extract the gas price for all gas stations in Spain from the official database; development of a user--friendly web and mobile app with the resulting data.\\
+	\textit{Technologies:} Python, Requests, SQLAlchemy, MySQL, CakePHP, HTML5, jQuery Mobile, PhoneGap.
+\end{itemize}
+
+\years{2011}\textsc{HW/SW engineer}, \href{http://www.tedesys.com}{TEDESYS Global, S.L.}, Santander, Spain.
+\begin{itemize}
+	\item  Design and implementation of a stereo vision system; adapting current OpenCV algorithms for implementation in a FPGA system.\\
+	\textit{Technologies:} C/C++, VHDL, OpenCV, dc1394, Boost.
+\end{itemize}
+
+\years{2008,2009}Summer grant, \href{http://www.imm.cnm.csic.es/magnetoplasmonics}{Magnetoplasmonics group}, Madrid Microelectronics Institute (IMM -- CSIC), Madrid, Spain.
+\begin{itemize}
+	\item  Debugging, improving and extending a scattering--matrix based numerical code, to be executed in a multi--processor system.\\
+	\textit{Technologies:} C/C++, BLAS, Lapack.
+\end{itemize}
+
+
+\section*{Education} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\years{2005--2010}\textsc{MSc} in Telecommunications Engineering, Universidad de Cantabria; speciality on microelectronics.
+
+\subsection*{Microelectronics specialization}
+\noindent
+Design and verification of digital integrated circuits.\\
+Design of full--custom analog integrated circuits.\\
+Embedded systems design, especially systems on chip (SoC). Development of task--specific hardware accelerators in VHDL.
+
+\subsection*{Specific education}
+\noindent
+\years{2013}\textit{M101P MongoDB for Developers}, online course organized by 10gen Education.\\
+\years{2011}\textit{CAP Theorem, PACELC and Determinism}, webinar organized by VoltDB.\\
+\years{2011}\textit{Big Data Onine Summit}, webinar organized by VoltDB.\\
+\years{2010}\textit{OpenCL Programming Webinar Series}, online course organized by AMD.
+
+
+\section*{Languages} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\noindent
+\textsc{Spanish}, native speaker.\\
+\textsc{English}, fluent. Technical assessment in juridic and technical translations.
+
+
+\section*{IT Skills} %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Programming languages}
+\noindent
+Proficiency in C/C++, Python and PHP.\\
+Good knowledge of JavaScript, Ada, VisualLISP, MIPS assembler and UNIX shell scripting.\\
+Working knowledge of Perl, Ruby and Java.
+
+\subsection*{Operating system administration}
+\noindent
+Windows, Linux (SuSE, Debian, Ubuntu, Fedora, RedHat/CentOS), *BSD (OpenBSD, FreeBSD).
+
+\subsection*{Web development}
+\noindent
+Frontend: HTML5 \amper{} CSS3, JavaScript, jQuery \amper{} jQuery Mobile, PhoneGap, Processing.js, Raphaël.\\
+Backend: MVC frameworks based on PHP (CakePHP) and Python (Django, Flask, Grok, Tornado).
+
+\subsection*{Database management systems}
+\noindent
+Relational databases: MySQL, PostgreSQL.\\
+NoSQL databases: MongoDB, Redis, Kyoto Cabinet.\\
+Search engines: Apache Solr.
+
+\subsection*{Version control systems}
+\noindent
+Centralized: Subversion.\\
+Distributed: Mercurial, Git.
+
+
+\end{document}
