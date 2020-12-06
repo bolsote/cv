@@ -10,7 +10,7 @@
 \usepackage[english]{babel}
 
 % Document layout.
-\usepackage{geometry} 
+\usepackage{geometry}
 	\geometry{letterpaper,
 	          textwidth=6.3in,
 	          textheight=9in,
@@ -21,10 +21,10 @@
 
 % Fonts.
 \usepackage{fontspec}
-% Converts LaTeX specials (``quotes'', --- dashes, etc.) to Unicode. 
+% Converts LaTeX specials (``quotes'', --- dashes, etc.) to Unicode.
 \defaultfontfeatures{Mapping=tex-text}
 	\setromanfont[Ligatures=Common,Numbers=OldStyle]{Adobe Caslon Pro}
-	\setmonofont[Scale=0.8]{Monaco} 
+	\setmonofont[Scale=0.8]{Monaco}
 	\setsansfont[Scale=0.9]{OptimaLTStd}
 \newfontfamily\dingbats{ITC Zapf Dingbats Std}
 
@@ -40,11 +40,11 @@
 	\reversemarginpar
 
 % Headings.
-\usepackage{sectsty} 
-\usepackage[normalem]{ulem} 
-	\sectionfont{\rmfamily\mdseries\Large} 
-	\subsectionfont{\rmfamily\mdseries\scshape\normalsize} 
-	\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+	\sectionfont{\rmfamily\mdseries\Large}
+	\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+	\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
 
 % PDF setup.
 \usepackage[dvipsnames]{xcolor}
@@ -55,7 +55,7 @@
             breaklinks,
             pdftitle={Víctor Manuel Muñoz Berti -- cv},
             pdfauthor={Víctor Muñoz}]
-           {hyperref}  
+           {hyperref}
 \hypersetup{linkcolor=NavyBlue,
             citecolor=NavyBlue,
             filecolor=black,
@@ -88,11 +88,16 @@ Member of the product development team of a leading service provider for the med
 Responsibilities and specific projects:
 \begin{itemize}
 	\item  FileRunner 2: Maintenance of our legacy file transfer application.\\
-	\textit{Technologies}: Python, Django, MySQL, Celery, JavaScript, jQuery.
+	\textit{Technologies}: OpenStack Swift, Python, Django, MySQL, Celery, JavaScript, jQuery.
 	\item  FileRunner 3: Design and development of our next generation file transfer application. The main objective was to create a fast upload experience, by leveraging parallelism both at the browser and the infrastructure levels. This enabled the transfer of multi--terabyte files, as is characteristic of the media industry. Performed management duties for the frontend sub--team.\\
-	\textit{Technologies}: Python, SQLAlchemy, Marshmallow, Nameko, PostgreSQL.
+	\textit{Technologies}: OpenStack Swift, Python, SQLAlchemy, Marshmallow, Nameko, PostgreSQL.
 	\item  {ClearView Flex}: Design and development of our industry--leading video streaming platform. The main objective was to build a ultra--low latency streaming solution, built on commodity hardware and standard network connections. This allowed members of the media industry to share and get feedback on anything from live editing sessions to live camera footage. Involvement in all three sub--teams: backend, frontend, and systems.\\
-	\textit{Technologies}: Python, SQLAlchemy, Marshmallow, Nameko, PostgreSQL, Redis, ElasticSearch, JavaScript, React, Redux, C, gstreamer, ffmpeg, Puppet, Terraform, Linux, Docker, Packer.
+	\textit{Technologies}: Python, SQLAlchemy, Marshmallow, Nameko, PostgreSQL, Redis, ElasticSearch, JavaScript, React, Redux, C, gstreamer, ffmpeg, Puppet, Terraform, Linux, Docker, Packer.\\
+	\textit{Awards}:
+	\begin{itemize}
+		\item 2020 HPA Engineering Excellence Awards Honourable Mention.
+		\item 2020 Engineering Emmy® Award.
+	\end{itemize}
 \end{itemize}
 
 \years{2017--2018}\textsc{CTO}, \href{http://loncom.com}{LonCom}, London, UK.
@@ -101,17 +106,17 @@ We continued the work started in Shared Property Data under the umbrella of LonR
 
 Responsibilites and specific projects:
 \begin{itemize}
-	\item  As the lead architect I designed a new system from the ground up, learning from our experience running Shared Property Data. The result was a system much more stable and straightforward than its predecessor, which allowed us to build a much more connected property graph. 
+	\item  As the lead architect I designed a new system from the ground up, learning from our experience running Shared Property Data. The result was a system much more stable and straightforward than its predecessor, which allowed us to build a much more connected and coherent property graph.
 	\item  Design and development of a transactional engine capable of creating a property graph, linking commercial property lettings and sales, agents, firms, and properties.\\
 	\textit{Technologies}: Python, SQLAlchemy, Marshmallow, PostgreSQL, ElasticSearch.
 	\item  Design and development of a REST API around the core engine.\\
 	\textit{Technologies}: Pyramid, Gunicorn.
 	\item  Coordinated the development of a web frontend, consuming the APIs and providing a user-friendly experience, tailored around the needs of commercial property agents and built based on their direct feedback.\\
 	\textit{Technologies}: TypeScript, React, Redux.
-	\item  Coordinated the devops aspect, ensuring the team got exact requirements for both development and production systems, and colaborating closely with them during the process.\\
+	\item  Coordinated the devops aspect, ensuring the team got exact requirements for both development and production systems, and collaborating closely with them during the process.\\
 	\textit{Technologies}: Ansible, Docker, Linux.
 	\item  As a tech lead I coordinated a team of between four and six people, managing the technical architecture and collaborating with our product owner in the creation of a product roadmap.
-	\item  As a board member I took part in shaping the general business strategy, and liasing with stakeholders to align the technical and comercial visions.
+	\item  As a board member I took part in shaping the general business strategy, and liaising with stakeholders to align the technical and commercial visions.
 \end{itemize}
 
 \years{2014--2017}\textsc{Lead Software Engineer/CTO}, \href{http://myspd.co.uk}{Shared Property Data}, London, UK.
@@ -154,8 +159,8 @@ General tasks:
 	\item  Management of the software development process and code life cycle, from requirements analysis and specification to deployment and maintenance.
 	\item  Level 3 technical support, performing tasks regarding performance and security code audits, software installation, upgrading and configuration and end--user training.\\
 	\textit{Technologies:} OTRS.
-	\item  Implementation of the ISO/IEC 15504 standard; preparation of the documentation regarding the software development process and the testing methodologies.
-	\item  Streamlining of the company software development process, migrating to a version control system, an issue tracking platform and an automated configuration and deployment system.\\
+	\item  Implementation of the ISO/IEC 15504 standard; preparation of the documentation regarding software development process and testing methodologies.
+	\item  Streamlining of the company's software development process, migrating to a version control system, an issue tracking platform and an automated configuration and deployment system.\\
 	\textit{Technologies:} Git, GitLab, Puppet.
 \end{itemize}
 
@@ -205,8 +210,8 @@ Embedded systems design, especially systems on chip (SoC). Development of task--
 
 \subsection*{Programming languages}
 \noindent
- Python, JavaScript, TypeScript, UNIX shell scripting.\\
-Working knowledge of C, C++, PHP and Go.
+Python, JavaScript, TypeScript, UNIX shell scripting.\\
+Working knowledge of C, C++, Ada, PHP and Go.
 
 \subsection*{Operating system administration}
 \noindent
