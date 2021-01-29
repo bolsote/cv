@@ -26,12 +26,21 @@
 	\setromanfont[Ligatures=Common,Numbers=OldStyle]{Adobe Caslon Pro}
 	\setmonofont[Scale=0.8]{Monaco}
 	\setsansfont[Scale=0.9]{OptimaLTStd}
-\newfontfamily\dingbats{ITC Zapf Dingbats Std}
+
+\newfontfamily\FAR{Font Awesome 5 Free Regular}
+\newfontfamily\FAS{Font Awesome 5 Free Solid}
+\newfontfamily\FAB{Font Awesome 5 Brands Regular}
 
 % Custom ampersand.
 \newcommand{\amper}
            {{\fontspec[Scale=.95]
                       {Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% Symbols.
+\def\symPhone{\FAS \symbol{"F879}}  % Phone
+\def\symEmail{\FAR \symbol{"F2B6}}  % Email
+\def\symGithub{\FAB \symbol{"F09B}}  % GitHub
+
 % Margin years.
 \usepackage{marginnote}
 	\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
@@ -72,16 +81,16 @@
 	London SW8 1UQ.
 \end{minipage}
 \begin{minipage}[m]{.25\textwidth}
-	{\dingbats ✆} \texttt{+44 7913 308666}\\
-	{\dingbats ✉} \href{mailto:victorm@marshland.es}
-	                    {victorm@marshland.es}
+	{\symPhone} \texttt{+44 7913 308666}\\
+	{\symEmail} \href{mailto:victorm@marshland.es}{victorm@marshland.es}
+	{\symGithub} \href{https://github.com/bolsote}{github.com/bolsote}
 \end{minipage}\\[.05cm]
 
 
 \section*{Experience}  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 
-\years{2018--2020}\textsc{Senior Software Developer}, \href{https://sohonet.com}{Sohonet}, London, UK.
+\years{2018--2021}\textsc{Senior Software Developer}, \href{https://sohonet.com}{Sohonet}, London, UK.
 
 Member of the product development team of a leading service provider for the media and entertainment industry. We were tasked with providing software to movie studios and production companies.
 
